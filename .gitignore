@@ -1,0 +1,27 @@
+# Node.js dependencies
+node_modules/
+
+# TypeScript build outputs
+/dist/
+/build/
+/out/
+
+# TypeScript cache
+*.tsbuildinfo
+
+# Logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Environment variables
+.env
+
+# IDE/Editor settings
+.vscode/
+.idea/
+.DS_Store
+
+# Ignore compiled JavaScript files if you don't use an outDir
+*.js
+*.js.map

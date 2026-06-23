@@ -1,0 +1,39 @@
+ @api_url=http://localhost:9002
+
+###########
+
+## Test get
+GET {{api_url}}/api/test/test-get?post-string=hello&post-numbers=42&post-numbers=43
+
+
+###########
+
+### Test Post
+POST {{api_url}}/api/test/test-post
+Content-Type: application/json
+
+{
+    "postString": "asdada",
+    "postNumber": 23
+}
+
+#########
+
+## Test multipart/form-data
+POST {{api_url}}/api/test/test-upload
+Content-Type: multipart/form-data; boundary=FormBoundary
+
+--FormBoundary
+Content-Disposition: form-data; name="title"
+
+file title
+--FormBoundary
+Content-Disposition: form-data; name="description"
+
+file description
+--FormBoundary
+Content-Disposition: form-data; name="myFile"; filename="original.png"
+Content-Type: image/png
+
+< .\sample-hut-400x300.png
+--FormBoundary

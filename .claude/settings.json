@@ -1,0 +1,18 @@
+{
+  "permissions": {
+    "deny": [
+      "Read(./.env)",
+      "Read(./.env.*)",
+      "Read(./.env.migrate)",
+      "Read(./secrets/**)",
+      "Read(./**/*.pem)",
+      "Read(./**/*.key)",
+      "Read(./dist/**)",
+      "Read(./node_modules/**)",
+      "Read(./uploads/**)",
+      "Read(./logs/**)",
+      "Edit(./package-lock.json)",
+      "Edit(./dist/**)"
+    ]
+  }
+}
