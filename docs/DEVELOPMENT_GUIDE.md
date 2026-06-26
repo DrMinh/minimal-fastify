@@ -1,4 +1,3 @@
-# ToolImageProcessing\_BE
 
 This project uses **Fastify** and **MongoDB**, and follows a **Controller-Service pattern** to keep the code modular and scalable.
 
